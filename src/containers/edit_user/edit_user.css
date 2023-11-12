@@ -1,4 +1,4 @@
-.adduser__container {
+.edituser__container {
   height: 100%;
   background-color: rgb(230, 230, 230);
   padding: 1rem 2rem;
@@ -10,23 +10,23 @@
   align-items: center;
 }
 
-.adduser__container-form {
+.edituser__container-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.adduser__container-form__inputs {
+.edituser__container-form__inputs {
   display: flex;
   flex-direction: column;
 }
 
-.adduser__container-form label {
+.edituser__container-form label {
   font-family: var(--font-family);
   font-weight: 500;
 }
 
-.adduser__container-form input {
+.edituser__container-form input {
   width: 250px;
   padding: 0.7rem 1rem;
   margin-bottom: 40px;
@@ -35,7 +35,7 @@
   border: none;
 }
 
-.adduser__container-form button {
+.edituser__container-form button {
   padding: 1rem 3rem;
   outline: none;
   border: none;

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Dashboard, AddUser } from "./containers/imports";
+import { Dashboard, AddUser, EditUser } from "./containers/imports";
 import { Sidebar } from "./components/imports";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/add-user" element={<AddUser />} />
+            <Route path="/edit-user" element={<EditUser />} />
           </Routes>
         </div>
       </div>

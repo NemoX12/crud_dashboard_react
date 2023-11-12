@@ -17,10 +17,7 @@ const AddUser = () => {
     e.preventDefault();
 
     let newId = v4().slice(0, 8);
-    console.log(newId);
-    setUser({ ...user, id: newId });
-
-    console.log({ ...user, id: newId });
+    let newUser = { ...user, id: newId };
 
     if (localStorage.getItem("users") !== null) {
       if (user.name == "" || user.age == "" || user.job == "") {
@@ -28,11 +25,11 @@ const AddUser = () => {
       } else {
         let currentUsers = JSON.parse(localStorage.getItem("users"));
 
-        currentUsers.push(user);
+        currentUsers.push(newUser);
         localStorage.setItem("users", JSON.stringify(currentUsers));
       }
     } else {
-      localStorage.setItem("users", JSON.stringify([user]));
+      localStorage.setItem("users", JSON.stringify([newUser]));
     }
 
     setUser((curr) => ({
@@ -49,35 +46,46 @@ const AddUser = () => {
   return (
     <div className="adduser__container">
       <form onSubmit={handleSubmit} className="adduser__container-form">
-        <label htmlFor="name">Enter name...</label>
-        <input
-          type="text"
-          id="name"
-          value={user.name}
-          onChange={(e) =>
-            setUser((user) => ({ ...user, name: e.target.value }))
-          }
-        />
+        <div className="adduser__container-form__inputs">
+          <label htmlFor="name">Enter name...</label>
+          <br />
+          <input
+            autoCapitalize="on"
+            autoComplete="off"
+            type="text"
+            id="name"
+            value={user.name}
+            onChange={(e) =>
+              setUser((user) => ({ ...user, name: e.target.value }))
+            }
+          />
 
-        <label htmlFor="age">Enter age...</label>
-        <input
-          type="text"
-          id="age"
-          value={user.age}
-          onChange={(e) =>
-            setUser((user) => ({ ...user, age: e.target.value }))
-          }
-        />
+          <label htmlFor="age">Enter age...</label>
+          <br />
+          <input
+            autoCapitalize="on"
+            autoComplete="off"
+            type="number"
+            id="age"
+            value={user.age}
+            onChange={(e) =>
+              setUser((user) => ({ ...user, age: e.target.value }))
+            }
+          />
 
-        <label htmlFor="job">Enter job name...</label>
-        <input
-          type="text"
-          id="job"
-          value={user.job}
-          onChange={(e) =>
-            setUser((user) => ({ ...user, job: e.target.value }))
-          }
-        />
+          <label htmlFor="job">Enter job name...</label>
+          <br />
+          <input
+            autoCapitalize="on"
+            autoComplete="off"
+            type="text"
+            id="job"
+            value={user.job}
+            onChange={(e) =>
+              setUser((user) => ({ ...user, job: e.target.value }))
+            }
+          />
+        </div>
 
         <button type="submit">Add User</button>
       </form>

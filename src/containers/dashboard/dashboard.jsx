@@ -3,10 +3,20 @@ import { Item } from "../../components/imports";
 import "./dashboard.css";
 
 const Hero = () => {
-  const [users, setUsers] = useState("");
+  const [users, setUsers] = useState([]);
   useEffect(() => {
     setUsers(JSON.parse(localStorage.getItem("users")));
   }, []);
+
+  const handleDelete = (id) => {
+    setUsers((curr) => {
+      const updatedUsers = curr.filter((user) => user.id !== id);
+
+      localStorage.setItem("users", JSON.stringify(updatedUsers));
+
+      return updatedUsers;
+    });
+  };
 
   return (
     <div className="dashboard__container">
@@ -20,7 +30,14 @@ const Hero = () => {
           {typeof users !== "string" ? (
             users?.map((elt, key) => {
               return (
-                <Item name={elt.name} age={elt.age} job={elt.job} key={key} />
+                <Item
+                  id={elt.id}
+                  name={elt.name}
+                  age={elt.age}
+                  job={elt.job}
+                  key={key}
+                  handleDelete={handleDelete}
+                />
               );
             })
           ) : (

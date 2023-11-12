@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <div className="dashboard__container">
-      {users.length > 0 ? (
+      {users?.length > 0 ? (
         <table className="dashboard__container-table">
           <tbody>
             <tr className="dashboard__container-table__header">

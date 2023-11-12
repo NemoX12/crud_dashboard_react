@@ -34,7 +34,11 @@ const Sidebar = () => {
             text={"Add User"}
             path={"/add-user"}
           />
-          <Item icon={<BiLogoGithub size={22} />} text={"My Github"} />
+          <Item
+            icon={<BiLogoGithub size={22} />}
+            text={"My Github"}
+            path={"https://github.com/NemoX12"}
+          />
         </div>
       </div>
     </SideContext.Provider>

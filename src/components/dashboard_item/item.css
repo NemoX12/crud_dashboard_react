@@ -1,5 +1,10 @@
 .item__container {
-  background-color: gray;
+  background-color: rgb(194, 194, 194);
+  font-family: var(--font-family);
+}
+
+.item__container td:nth-child(2) {
+  text-align: center;
 }
 
 .item__container-actions {

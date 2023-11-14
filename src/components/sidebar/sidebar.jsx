@@ -27,7 +27,7 @@ const Sidebar = () => {
           <Item
             icon={<BiSolidDashboard size={22} />}
             text={"Dashboard"}
-            path={"/"}
+            path={"/dashboard"}
           />
           <Item
             icon={<BiSolidUser size={22} />}

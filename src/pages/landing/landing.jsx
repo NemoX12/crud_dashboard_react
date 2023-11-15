@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Partnership } from "../../containers/imports";
+import { Hero, Integration, Partnership } from "../../containers/imports";
 import "./landing.css";
 
 const Landing = () => {
@@ -7,6 +7,7 @@ const Landing = () => {
     <div>
       <Hero />
       <Partnership />
+      <Integration />
     </div>
   );
 };

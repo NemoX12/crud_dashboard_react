@@ -1,6 +1,7 @@
 export { default as Logo } from "./logo.svg";
 export { default as LogoWhite } from "./logo_white.svg";
 export { default as HeroImage } from "./hero_image.png";
+export { default as Avatars } from "./avatars.png";
 
 // partnership companies logos
 export { default as Comp1 } from "./comp1.svg";

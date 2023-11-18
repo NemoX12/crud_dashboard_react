@@ -1,0 +1,56 @@
+.plans__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans__container-top {
+  text-align: center;
+  width: 470px;
+}
+
+.plans__container-top__header {
+  color: var(--blue);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.plans__container-top__desc {
+  color: #667085;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 157.931%; /* 31.586px */
+}
+
+.plans__container-cards__container {
+  display: flex;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 1030px) {
+  .plans__container-cards__container {
+    gap: 1rem;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .plans__container-top {
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+  }
+  .plans__container-top__header {
+    font-size: 32px;
+  }
+
+  .plans__container-top__desc {
+    font-size: 14px;
+  }
+}

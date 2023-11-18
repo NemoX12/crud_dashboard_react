@@ -1,0 +1,136 @@
+.line__dashed {
+  width: 100%;
+  border-bottom: 1px dashed #aaa;
+}
+
+.card__container {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.card__container-top__section {
+  padding: 40px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__container-top__section-badge {
+  padding: 8px;
+  margin-bottom: 20px;
+
+  border-radius: 4px;
+  background-color: #edf5ff;
+
+  color: var(--blue);
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card__container-top__section-desc {
+  color: #667085;
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 128.086%; /* 16.651px */
+
+  margin-bottom: 30px;
+}
+
+.card__container-top__section-price span {
+  color: #1e2024;
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  cursor: default;
+}
+
+.card__container-top__section-price {
+  color: #667085;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 128.086%; /* 20.494px */
+}
+
+.card__container-bottom__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 30px;
+  width: 83%;
+}
+
+.card__container-bottom__section-item {
+  color: #667085;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 128.086%; /* 19.213px */
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.card__container-bottom__section-item svg {
+  color: var(--blue);
+}
+
+.card__container-bottom-section__btn {
+  padding: 8px 0 8px 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+
+  outline: none;
+  border: none;
+  border-radius: 9px;
+
+  background-color: var(--blue);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+
+  transition: all 0.1s ease;
+}
+
+.card__container-bottom-section__btn:hover {
+  background: #0671aa;
+}
+
+.dark-card__container {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #0b0641;
+  margin-top: -30px;
+}
+
+.dark-card__container h3 {
+  color: var(--blue);
+}
+
+.dark-card__container p,
+.dark-card__container span {
+  color: #fff;
+}
+
+@media screen and (max-width: 1030px) {
+  .dark-card__container {
+    margin-top: 0;
+  }
+}

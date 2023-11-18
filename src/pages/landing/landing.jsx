@@ -4,6 +4,7 @@ import {
   Hero,
   Integration,
   Partnership,
+  Plans,
 } from "../../containers/imports";
 import "./landing.css";
 
@@ -14,6 +15,7 @@ const Landing = () => {
       <Partnership />
       <Integration />
       <Community />
+      <Plans />
     </div>
   );
 };

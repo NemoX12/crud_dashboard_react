@@ -5,6 +5,7 @@ import {
   Integration,
   Partnership,
   Plans,
+  Options,
 } from "../../containers/imports";
 import "./landing.css";
 
@@ -16,6 +17,7 @@ const Landing = () => {
       <Integration />
       <Community />
       <Plans />
+      <Options />
     </div>
   );
 };

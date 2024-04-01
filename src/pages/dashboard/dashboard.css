@@ -31,8 +31,45 @@
   padding-left: 10px;
 }
 
+.empty {
+  padding: 150px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty p {
+  font-family: Arial;
+  font-size: 36px;
+}
+
+.empty button {
+  padding: 10px 5px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--blue);
+  color: #fff;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.empty button:hover {
+  background-color: var(--dark-blue);
+}
+
 @media screen and (max-width: 425px) {
   .dashboard_container-table_header th {
     font-size: 12px;
+  }
+
+  .empty {
+    padding: 10px;
+  }
+
+  .empty p {
+    font-size: 24px;
   }
 }

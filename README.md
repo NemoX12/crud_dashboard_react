@@ -4,7 +4,7 @@ CRUD Web Application. This small Dashboard can - Create new users, Read data fro
 
 ---
 
-![App Screenshot](public/screenshot.png)
+![App Screenshot](public/main_screenshot.png)
 
 ## Features
 

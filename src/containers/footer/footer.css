@@ -1,0 +1,117 @@
+.footer_container {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer_container-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_container-main-items {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.footer_container-main-items_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer_container-main-items_column h1 {
+  font-size: 22px;
+  color: #fff;
+  font-family: var(--font-family);
+  margin-bottom: 10px;
+}
+
+.footer_container-main-items_column a {
+  font-family: var(--font-family);
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer_container-main-items_column a:hover {
+  color: rgb(151, 151, 151);
+}
+
+.footer_container-main-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer_container-main-form input {
+  padding: 10px 5px;
+  width: 300px;
+  outline: none;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.footer_container-main-form input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+.footer_container-main-form button {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.footer-container-copyright {
+  color: #fff;
+  font-family: var(--font-family);
+}
+
+@media screen and (max-width: 768px) {
+  .footer_container-main {
+    flex-direction: column;
+  }
+
+  .footer_container-main-items {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer_container {
+    padding: 2rem 1rem;
+  }
+
+  .footer_container-main-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer_container-main-form input {
+    width: 200px;
+  }
+
+  .footer-container-copyright {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer_container {
+    padding: 2rem 0.5rem;
+  }
+
+  .footer_container-main-form input {
+    width: 150px;
+  }
+
+  .footer-container-copyright {
+    font-size: 10px;
+  }
+}

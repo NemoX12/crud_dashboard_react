@@ -44,6 +44,12 @@
   background: #0671aa;
 }
 
+.navbar__container-button,
+.navbar__container-menu__button {
+  text-decoration: none;
+  font-family: Arial;
+}
+
 .navbar__container-menu__button {
   color: #fff;
   transition: var(--text-transistion);

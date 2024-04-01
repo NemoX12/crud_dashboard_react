@@ -4,7 +4,7 @@ import "./options.css";
 
 const Options = () => {
   return (
-    <div className="options__container section__padding">
+    <div id="options" className="options__container section__padding">
       <div className="options__container-top">
         <h2 className="options__container-top__header">
           Interesting option for customer

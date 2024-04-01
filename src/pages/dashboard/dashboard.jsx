@@ -22,20 +22,25 @@ const Hero = () => {
   };
 
   return (
-    <div className="dashboard__container">
+    <div className="dashboard_container">
       {users?.length > 0 ? (
-        <table className="dashboard__container-table">
+        <table className="dashboard_container-table">
           <tbody>
-            <tr className="dashboard__container-table__header">
+            <tr className="dashboard_container-table_header">
+              <th>#</th>
               <th>Name</th>
               <th>Age</th>
               <th>Job</th>
+              <th>Actions</th>
             </tr>
             {typeof users !== "string" ? (
               users?.map((elt, key) => {
+                let it = users.find((user) => user.id == elt.id);
+
                 return (
                   <Item
                     id={elt.id}
+                    idx={users.indexOf(it) + 1}
                     name={elt.name}
                     age={elt.age}
                     job={elt.job}

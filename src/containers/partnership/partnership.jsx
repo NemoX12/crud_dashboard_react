@@ -6,7 +6,7 @@ const LOGOS = [Comp1, Comp2, Comp3, Comp4, Comp5, Comp6];
 
 const Partnersip = () => {
   return (
-    <div className="partnership__container section__padding">
+    <div id="partnership" className="partnership__container section__padding">
       <h1 className="partnership__container-header">Trusted by company like</h1>
       <div className="partnership__container-logos">
         {LOGOS.map((e, i) => {

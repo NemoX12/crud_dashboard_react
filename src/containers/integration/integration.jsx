@@ -31,7 +31,7 @@ const Card = ({ rotate }) => {
 
 const Integration = () => {
   return (
-    <div className="integration__container section__padding">
+    <div id="integration" className="integration__container section__padding">
       <div className="integration__container-cards">
         <Card />
         <Card rotate={true} />

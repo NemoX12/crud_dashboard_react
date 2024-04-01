@@ -5,7 +5,7 @@ import "./community.css";
 
 const Community = () => {
   return (
-    <div className="community__container section__padding">
+    <div id="community" className="community__container section__padding">
       <div className="community__container-left">
         <h2 className="community__container-left__header">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.

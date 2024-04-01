@@ -6,6 +6,7 @@ import {
   Partnership,
   Plans,
   Options,
+  Footer,
 } from "../../containers/imports";
 import "./landing.css";
 
@@ -18,6 +19,7 @@ const Landing = () => {
       <Community />
       <Plans />
       <Options />
+      <Footer />
     </div>
   );
 };

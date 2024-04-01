@@ -72,3 +72,21 @@
   padding: 10px;
   width: 22px;
 }
+
+@media screen and (max-width: 320px) {
+  .sidebar__container {
+    padding: 5px 10px;
+  }
+
+  .sidebar__container-bottom__item {
+    padding: 5px 5px;
+  }
+
+  .sidebar__container-top-button {
+    padding: 5px 5px;
+  }
+
+  .sidebar__container-top img {
+    width: 32px;
+  }
+}

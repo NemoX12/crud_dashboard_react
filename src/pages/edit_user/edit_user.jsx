@@ -35,11 +35,7 @@ const EditUser = () => {
 
     localStorage.setItem("users", JSON.stringify(updatedUsers));
 
-    // Redirect or navigate to another page after submission
-    history("/"); // Replace "/" with the desired path
-
-    // Alternatively, you can use the following to go back to the previous page:
-    // history.goBack();
+    history("/dashboard");
   };
 
   return (
@@ -87,7 +83,9 @@ const EditUser = () => {
           />
         </div>
 
-        <button type="submit">Edit User</button>
+        <button type="submit" className="submit-btn">
+          Edit User
+        </button>
       </form>
     </div>
   );

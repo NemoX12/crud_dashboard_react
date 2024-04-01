@@ -6,6 +6,10 @@
   /* box-sizing: border-box; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .content {
   margin-left: 80px;
   padding: 1rem;
@@ -96,4 +100,10 @@
   --dark-blue: #0b0641;
   --text-transistion: all ease 0.1s;
   --font-family: Montserrat;
+}
+
+@media screen and (max-width: 320px) {
+  .content {
+    margin-left: 45px;
+  }
 }

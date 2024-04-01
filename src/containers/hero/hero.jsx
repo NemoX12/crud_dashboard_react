@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button, Navbar } from "../../components/imports";
 import { HeroImage } from "../../assets/imports";
 import "./hero.css";
@@ -6,7 +7,7 @@ import "./hero.css";
 const Hero = () => {
   return (
     <>
-      <div className="hero__container section__padding gradient-bg">
+      <div className="hero__container section__padding gradient-bg" id="home">
         <Navbar />
 
         <div className="hero__container-content">
@@ -20,7 +21,9 @@ const Hero = () => {
             Dashboard is a buisness management solution that offers a
             personalized portal to each type of user,
           </p>
-          <Button ctn={"Get Started"} />
+          <Link to={"/dashboard"}>
+            <Button ctn={"Get Started"} />
+          </Link>
         </div>
       </div>
 

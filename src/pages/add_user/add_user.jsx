@@ -40,7 +40,7 @@ const AddUser = () => {
       job: "",
     }));
 
-    history("/");
+    history("/dashboard");
   };
 
   return (
@@ -48,7 +48,6 @@ const AddUser = () => {
       <form onSubmit={handleSubmit} className="adduser__container-form">
         <div className="adduser__container-form__inputs">
           <label htmlFor="name">Enter name...</label>
-          <br />
           <input
             autoCapitalize="on"
             autoComplete="off"
@@ -61,7 +60,6 @@ const AddUser = () => {
           />
 
           <label htmlFor="age">Enter age...</label>
-          <br />
           <input
             autoCapitalize="on"
             autoComplete="off"
@@ -74,7 +72,6 @@ const AddUser = () => {
           />
 
           <label htmlFor="job">Enter job name...</label>
-          <br />
           <input
             autoCapitalize="on"
             autoComplete="off"
@@ -87,7 +84,9 @@ const AddUser = () => {
           />
         </div>
 
-        <button type="submit">Add User</button>
+        <button type="submit" className="submit-btn">
+          Add User
+        </button>
       </form>
     </div>
   );

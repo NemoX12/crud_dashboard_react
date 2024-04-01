@@ -4,7 +4,7 @@ import "./plans.css";
 
 const Plans = () => {
   return (
-    <div className="plans__container section__padding">
+    <div id="plans" className="plans__container section__padding">
       <div className="plans__container-top">
         <h1 className="plans__container-top__header">Pick up the best plan</h1>
         <p className="plans__container-top__desc">

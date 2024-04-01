@@ -1,31 +1,76 @@
-.item__container {
-  background-color: rgb(194, 194, 194);
-  font-family: var(--font-family);
+.item_container td {
+  /* outline: 1px solid red; */
+  padding: 10px;
+  word-break: break-all;
 }
 
-.item__container td:nth-child(2) {
-  text-align: center;
+.item_container td:nth-child(-n + 4) {
+  border-right: 1px solid black;
 }
 
-.item__container-actions {
+.item_container td:nth-child(1),
+.item_container td:nth-child(3) {
+  text-align: left;
+}
+
+.item_container-actions {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.item__container-actions button {
+.item_container-actions button {
+  padding: 5px 10px;
+  width: 100px;
   outline: none;
   border: none;
+  color: #fff;
+  border-radius: 5px;
+}
 
-  padding: 10px 30px;
+.item_container-actions button:nth-child(1) {
+  background-color: #ff0000;
+}
+
+.item_container-actions button:nth-child(1):hover {
+  background-color: #a50000;
+}
+
+.item_container-actions button:hover {
   cursor: pointer;
-
-  color: white;
 }
 
-.item__container-actions button:nth-child(1) {
-  background-color: rgb(255, 0, 0);
+.item_container-actions button:nth-child(2) {
+  background-color: #009cda;
 }
 
-.item__container-actions button:nth-child(2) {
-  background-color: rgb(0, 122, 163);
+.item_container-actions button:nth-child(2):hover {
+  background-color: #006b96;
+}
+
+.item_container:nth-child(odd) {
+  background-color: #dbdbdb;
+}
+
+@media screen and (max-width: 425px) {
+  .item_container {
+    font-size: 10px;
+  }
+
+  .item_container button {
+    width: 50px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .item_container td {
+    /* outline: 1px solid red; */
+    padding: 5px;
+  }
+
+  .item_container-actions button {
+    width: 40px;
+    padding: 5px 0px;
+  }
 }

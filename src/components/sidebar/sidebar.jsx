@@ -21,7 +21,9 @@ const Sidebar = () => {
           <p onClick={toggleSidebar} className="sidebar__container-top-button">
             {show ? <HiChevronRight size={22} /> : <HiChevronLeft size={22} />}
           </p>
-          <img src={Logo} alt="logo" />
+          <Link to="/">
+            <img src={Logo} alt="logo" />
+          </Link>
         </div>
         <div className="sidebar__container-bottom">
           <Item
